@@ -1,2 +1,2 @@
 all:
-	docker build . --rm=false
+	docker build -t rpi-erlang .
