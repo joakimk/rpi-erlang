@@ -14,6 +14,10 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
 
     docker run -i -t joakimk/rpi-erlang erl
 
+## Docker images using this image
+
+- [rpi-elixir](https://github.com/joakimk/rpi-elixir)
+
 ## Building
 
 This takes 68 minutes on a Raspberry Pi 2.
