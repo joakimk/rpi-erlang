@@ -39,11 +39,8 @@ Will fix these as I find the need for them, or someone else does.
     **********************  APPLICATIONS DISABLED  **********************
     *********************************************************************
 
-    crypto         : No usable OpenSSL found
     jinterface     : No Java compiler found
     odbc           : ODBC library - link check failed
-    ssh            : No usable OpenSSL found
-    ssl            : No usable OpenSSL found
 
     *********************************************************************
     *********************************************************************
