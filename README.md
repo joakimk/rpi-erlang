@@ -27,11 +27,13 @@ This takes 68 minutes on a Raspberry Pi 2.
 ## Publishing
 
     docker tag 5555555555 joakimk/rpi-erlang:version
+    docker tag 5555555555 joakimk/rpi-erlang:latest
 
     docker login
 
     # This takes about 10 minutes:
     docker push joakimk/rpi-erlang:version
+    docker push joakimk/rpi-erlang:latest
 
 ## Known missing features from build output
 
