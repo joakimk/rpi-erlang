@@ -37,12 +37,12 @@ RUN set -xe \
     && echo "${OTP_DOWNLOAD_SHA}  otp-src.tar.gz" | sha256sum -c -
 
 RUN set -xe \
-    mkdir -p /usr/src/otp-src \
+    && mkdir -p /usr/src/otp-src \
     && tar -xzC /usr/src/otp-src --strip-components=1 -f otp-src.tar.gz \
     && rm otp-src.tar.gz
 
 RUN set -ex \
-    cd /usr/src/otp-src \
+    && cd /usr/src/otp-src \
     && ./otp_build autoconf \
     && ./configure \
     && make -j $(nproc) \
