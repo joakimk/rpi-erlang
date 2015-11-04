@@ -9,6 +9,7 @@ It's built using a Raspberry Pi 2, so I don't know if it works for the first ver
 - [x] add build time to readme
 - [x] add ssl dependencies and publish again
 - [ ] remove non-working wx-deps and java and publish again (and time the push for readme reference)
+- [ ] combine build step to reduce intermediate build step space usage
 
 ## Installing and running
 
