@@ -2,7 +2,8 @@
 
 Erlang docker image for Raspberry Pi (compiled for it's ARM cpu).
 
-It's built using a Raspberry Pi 2, so I don't know if it works for the first version. Tell me if it does not. Might be able to get one and build using that.
+* Optimized for size: the image is about 340MB.
+* It's built using a Raspberry Pi 2. Please open an issue if it does not work on your Raspberry Pi version.
 
 ## Installing and running
 
