@@ -5,6 +5,10 @@ Erlang docker image for Raspberry Pi (compiled for it's ARM cpu).
 * Optimized for size: the image is about 340MB.
 * It's built using a Raspberry Pi 2. Please open an issue if it does not work on your Raspberry Pi version.
 
+Related docker images:
+
+* [rpi-elixir](https://github.com/joakimk/rpi-elixir)
+
 ## Installing and running
 
 On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/):
@@ -13,10 +17,6 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
     # or: docker pull joakimk/rpi-erlang:18.1.3
 
     docker run -i -t joakimk/rpi-erlang erl
-
-## Known uses of this docker image
-
-- [rpi-elixir](https://github.com/joakimk/rpi-elixir)
 
 ## Building
 
