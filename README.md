@@ -7,8 +7,8 @@ Will be published at https://hub.docker.com/r/joakimk/rpi-erlang/
 On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/):
 
     docker pull rpi-erlang
-    docker pull rpi-erlang:18.1.3
-    docker run rpi-erlang:18.1.3 bash
+    # or: docker pull rpi-erlang:18.1.3
+    docker run rpi-erlang bash
     # erl
 
 ## Building
