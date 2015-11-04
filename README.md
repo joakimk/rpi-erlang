@@ -5,6 +5,7 @@ WIP: Looking into if I can build an erlang docker image for Raspberry PI (want i
 - make it work
 - publish
 - add build time to readme
+- add missing dependencies and publish again
 
 Will be published at https://hub.docker.com/r/joakimk/rpi-erlang/
 
