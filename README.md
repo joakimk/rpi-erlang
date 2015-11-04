@@ -12,10 +12,10 @@ Will be published at https://hub.docker.com/r/joakimk/rpi-erlang/
 
 On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/):
 
-    docker pull rpi-erlang
-    # or: docker pull rpi-erlang:18.1.3
+    docker pull joakimk/rpi-erlang
+    # or: docker pull joakimk/rpi-erlang:18.1.3
     
-    docker run rpi-erlang bash
+    docker run joakimk/rpi-erlang bash
     # erl
 
 ## Building
