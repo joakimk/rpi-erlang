@@ -16,12 +16,11 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
     docker pull joakimk/rpi-erlang
     # or: docker pull joakimk/rpi-erlang:18.1.3
 
-    docker run joakimk/rpi-erlang bash
-    # erl
+    docker run -i -t joakimk/rpi-erlang erl
 
 ## Building
 
-This takes ? minutes on a Raspberry Pi 2.
+This takes 77 minutes on a Raspberry Pi 2.
 
     make
 
