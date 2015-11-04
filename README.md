@@ -8,6 +8,7 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
 
     docker pull rpi-erlang
     # or: docker pull rpi-erlang:18.1.3
+    
     docker run rpi-erlang bash
     # erl
 
