@@ -13,12 +13,10 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     autoconf \
     libncurses5-dev \
+    libssl-dev \
     curl \
     ca-certificates \
     procps \
-    default-jre-headless \
-    libwxbase2.8-dev \
-    libwxgtk2.8-dev \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
