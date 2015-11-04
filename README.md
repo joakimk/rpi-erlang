@@ -1,4 +1,4 @@
-[![](https://badge.imagelayers.io/joakimk/rpi-erlang:latest.svg)](https://imagelayers.io/?images=joakimk/rpi-erlang:latest 'Get your own badge on imagelayers.io')
+[![](https://badge.imagelayers.io/joakimk/rpi-erlang.svg)](https://imagelayers.io/?images=joakimk/rpi-erlang 'Get your own badge on imagelayers.io')
 
 Erlang docker image for Raspberry Pi (compiled for it's ARM cpu).
 
