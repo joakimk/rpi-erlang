@@ -1,13 +1,14 @@
-WIP: Looking into if I can build an erlang docker image for Raspberry PI (want it as a base for an Elixir image).
+Erlang docker image for Raspberry Pi (compiled for it's ARM cpu).
+
+It's built using a Raspberry Pi 2, so I don't know if it works for the first version. Tell me if it does not. Might be able to get one and build using that.
 
 ## TODO:
 
 - [x] make it work
 - [x] publish
-- [ ] add build time to readme
-- [ ] add missing dependencies and publish again
-
-Will be published at https://hub.docker.com/r/joakimk/rpi-erlang/
+- [x] add build time to readme
+- [x] add ssl dependencies and publish again
+- [ ] remove non-working wx-deps and java and publish again (and time the push for readme reference)
 
 ## Installing and running
 
@@ -20,7 +21,7 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
 
 ## Building
 
-This takes 77 minutes on a Raspberry Pi 2.
+This takes 78 minutes on a Raspberry Pi 2.
 
     make
 
@@ -29,6 +30,8 @@ This takes 77 minutes on a Raspberry Pi 2.
     docker tag 5555555555 joakimk/rpi-erlang:version
 
     docker login
+    
+    # This takes about ? minutes:
     docker push joakimk/rpi-erlang:version
 
 ## Known missing features from build output
