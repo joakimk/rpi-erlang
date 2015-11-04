@@ -11,7 +11,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update && apt-get install -y \
     locales \
     build-essential \
-    wget \
+    curl \
     ca-certificates \
     procps \
     default-jre-headless \
@@ -34,7 +34,7 @@ ENV OTP_VERSION=OTP-${ERLANG_VERSION} \
 
 RUN set -xe \
     && curl -SL https://github.com/erlang/otp/archive/${OTP_VERSION}.tar.gz -o otp-src.tar.gz \
-    && echo "${OTP_DOWNLOAD_SHA} otp-src.tar.gz" | sha256sum -c - \
+    && echo "${OTP_DOWNLOAD_SHA}  otp-src.tar.gz" | sha256sum -c -
 
 RUN set -xe \
     mkdir -p /usr/src/otp-src \
