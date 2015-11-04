@@ -2,7 +2,7 @@ WIP: Looking into if I can build an erlang docker image for Raspberry PI (want i
 
 Will be published at https://hub.docker.com/r/joakimk/rpi-erlang/
 
-## Installing
+## Installing and running
 
 On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/):
 
