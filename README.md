@@ -8,7 +8,7 @@ It's built using a Raspberry Pi 2, so I don't know if it works for the first ver
 - [x] publish
 - [x] add build time to readme
 - [x] add ssl dependencies and publish again
-- [ ] remove non-working wx-deps and java and publish again (and time the push for readme reference)
+- [x] remove non-working wx-deps and java and publish again (and time the push for readme reference) **120mb smaller, now 505mb**
 - [ ] combine build step to reduce intermediate build step space usage
 
 ## Installing and running
@@ -22,7 +22,7 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
 
 ## Building
 
-This takes 78 minutes on a Raspberry Pi 2.
+This takes 72 minutes on a Raspberry Pi 2.
 
     make
 
@@ -32,7 +32,7 @@ This takes 78 minutes on a Raspberry Pi 2.
 
     docker login
 
-    # This takes about ? minutes:
+    # This takes about 17 minutes:
     docker push joakimk/rpi-erlang:version
 
 ## Known missing features from build output

@@ -1,15 +1,14 @@
 FROM resin/rpi-raspbian:wheezy
 MAINTAINER Joakim Kolsjö <joakim.kolsjo<at>gmail.com>
 
-ENV
-  ERLANG_VERSION=18.1.3 \
-  ERLANG_SHA=e014f4248b113698ca35412fde22646f5aab804b5e1f338d21345414d244d467 \
-  DEBIAN_FRONTEND=noninteractive \
-  OTP_VERSION=OTP-${ERLANG_VERSION} \
-  OTP_DOWNLOAD_SHA=${ERLANG_SHA} \
-  LANG=en_US.UTF-8 \
-  LANGUAGE=en_US.UTF-8 \
-  LC_ALL=en_US.UTF-8
+ENV ERLANG_VERSION=18.1.3 \
+    ERLANG_SHA=e014f4248b113698ca35412fde22646f5aab804b5e1f338d21345414d244d467 \
+    DEBIAN_FRONTEND=noninteractive \
+    OTP_VERSION=OTP-${ERLANG_VERSION} \
+    OTP_DOWNLOAD_SHA=${ERLANG_SHA} \
+    LANG=en_US.UTF-8 \
+    LANGUAGE=en_US.UTF-8 \
+    LC_ALL=en_US.UTF-8
 
 # Based on a few different docker files, mainly:
 # https://github.com/voidlock/docker-erlang/blob/master/18.1.3/Dockerfile
