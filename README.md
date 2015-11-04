@@ -31,6 +31,56 @@ This takes ? minutes on a Raspberry Pi 2.
     docker login
     docker push joakimk/rpi-erlang:version
 
+## Known missing features from build output
+
+Will fix these as I find the need for them, or someone else does.
+
+    *********************************************************************
+    **********************  APPLICATIONS DISABLED  **********************
+    *********************************************************************
+
+    crypto         : No usable OpenSSL found
+    jinterface     : No Java compiler found
+    odbc           : ODBC library - link check failed
+    ssh            : No usable OpenSSL found
+    ssl            : No usable OpenSSL found
+
+    *********************************************************************
+    *********************************************************************
+    **********************  APPLICATIONS INFORMATION  *******************
+    *********************************************************************
+
+    wx             : Can not link the wx driver, wx will NOT be useable
+    erts           :
+
+                     WARNING:
+                       Only gcc's __sync_* builtins available for
+                       atomic memory access. This will cause lots
+                       of expensive and unnecessary memory barrier
+                       instructions to be issued which will make
+                       the performance of the runtime system
+                       suffer. You are *strongly* advised to
+                       upgrade to a gcc version that supports the
+                       __atomic_* builtins (at least gcc version
+                       4.7) or build with libatomic_ops. See the
+                       "Atomic Memory Operations and the VM"
+                       chapter of $ERL_TOP/HOWTO/INSTALL.md for
+                       more information.
+
+
+    *********************************************************************
+    *********************************************************************
+    **********************  DOCUMENTATION INFORMATION  ******************
+    *********************************************************************
+
+    documentation  :
+                     xsltproc is missing.
+                     fop is missing.
+                     xmllint is missing.
+                     The documentation can not be built.
+
+    *********************************************************************
+
 ## License
 
 Copyright (c) 2015 [Joakim Kolsjö](https://twitter.com/joakimk)
