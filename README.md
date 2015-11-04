@@ -1,5 +1,11 @@
 WIP: Looking into if I can build an erlang docker image for Raspberry PI (want it as a base for an Elixir image).
 
+## TODO:
+
+- make it work
+- publish
+- add build time to readme
+
 Will be published at https://hub.docker.com/r/joakimk/rpi-erlang/
 
 ## Installing and running
@@ -13,6 +19,8 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
     # erl
 
 ## Building
+
+This takes ? minutes on a Raspberry Pi 2.
 
     make
 
