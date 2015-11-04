@@ -14,7 +14,7 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
 
     docker run -i -t joakimk/rpi-erlang erl
 
-## Docker images using this image
+## Known uses of this docker image
 
 - [rpi-elixir](https://github.com/joakimk/rpi-elixir)
 
