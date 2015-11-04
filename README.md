@@ -2,8 +2,8 @@ WIP: Looking into if I can build an erlang docker image for Raspberry PI (want i
 
 ## TODO:
 
-- [ ] make it work
-- [ ] publish
+- [x] make it work
+- [x] publish
 - [ ] add build time to readme
 - [ ] add missing dependencies and publish again
 
