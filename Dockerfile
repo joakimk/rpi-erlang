@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y \
     locales \
     build-essential \
     autoconf \
+    libncurses5-dev \
     curl \
     ca-certificates \
     procps \
