@@ -14,7 +14,7 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
 
     docker pull joakimk/rpi-erlang
     # or: docker pull joakimk/rpi-erlang:18.1.3
-    
+
     docker run joakimk/rpi-erlang bash
     # erl
 
@@ -23,6 +23,13 @@ On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/
 This takes ? minutes on a Raspberry Pi 2.
 
     make
+
+## Publishing
+
+    docker tag 5555555555 joakimk/rpi-erlang:version
+
+    docker login
+    docker push joakimk/rpi-erlang:version
 
 ## License
 

@@ -1,2 +1,2 @@
 all:
-	docker build -t rpi-erlang .
+	docker build -t joakimk/rpi-erlang .
