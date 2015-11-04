@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/joakimk/rpi-erlang:latest.svg)](https://imagelayers.io/?images=joakimk/rpi-erlang:latest 'Get your own badge on imagelayers.io')
+
 Erlang docker image for Raspberry Pi (compiled for it's ARM cpu).
 
 It's built using a Raspberry Pi 2, so I don't know if it works for the first version. Tell me if it does not. Might be able to get one and build using that.
