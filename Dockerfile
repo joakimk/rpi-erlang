@@ -2,8 +2,9 @@ FROM resin/rpi-raspbian:wheezy
 MAINTAINER Joakim Kolsjö <joakim.kolsjo<at>gmail.com>
 
 ENV ERLANG_VERSION=18.1.3 \
-    ERLANG_SHA=e014f4248b113698ca35412fde22646f5aab804b5e1f338d21345414d244d467 \
-    DEBIAN_FRONTEND=noninteractive \
+    ERLANG_SHA=e014f4248b113698ca35412fde22646f5aab804b5e1f338d21345414d244d467
+
+ENV DEBIAN_FRONTEND=noninteractive \
     OTP_VERSION=OTP-${ERLANG_VERSION} \
     OTP_DOWNLOAD_SHA=${ERLANG_SHA} \
     LANG=en_US.UTF-8 \
@@ -12,6 +13,8 @@ ENV ERLANG_VERSION=18.1.3 \
 
 # Based on a few different docker files, mainly:
 # https://github.com/voidlock/docker-erlang/blob/master/18.1.3/Dockerfile
+
+# NOTE: Things are grouped in the most optimal way to remove temporary files from the final image so that it is as small as possible. So don't refactor this for readability if that adds more "RUN" steps.
 
 RUN apt-get update && apt-get install -y \
     locales \
@@ -23,6 +26,7 @@ RUN apt-get update && apt-get install -y \
     ca-certificates \
     procps \
     --no-install-recommends && \
+    apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 RUN export LANG=en_US.UTF-8 \
