@@ -31,7 +31,7 @@ This takes 78 minutes on a Raspberry Pi 2.
     docker tag 5555555555 joakimk/rpi-erlang:version
 
     docker login
-    
+
     # This takes about ? minutes:
     docker push joakimk/rpi-erlang:version
 
