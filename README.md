@@ -1,8 +1,8 @@
 [Docker Hub](https://hub.docker.com/r/joakimk/rpi-erlang/)
 
-Erlang docker image for Raspberry Pi (compiled for it's ARM cpu).
+Erlang docker image for Raspberry Pi (compiled for it's ARM cpu). 100% based on <https://github.com/bitwalker/alpine-erlang> except it's based on arm32v6/alpine.
 
-* Optimized for size: the image is about 340MB.
+* Optimized for size: the image is about 50MB.
 * It's built using a Raspberry Pi 2. Please open an issue if it does not work on your Raspberry Pi version.
 
 Related docker images:
@@ -14,13 +14,13 @@ Related docker images:
 On a Raspberry Pi running [an OS with docker](http://blog.hypriot.com/downloads/):
 
     docker pull joakimk/rpi-erlang
-    # or: docker pull joakimk/rpi-erlang:18.1.3
+    # or: docker pull joakimk/rpi-erlang:20.2.2
 
     docker run -i -t joakimk/rpi-erlang erl
 
 ## Building
 
-This takes 68 minutes on a Raspberry Pi 2.
+This takes 59 minutes on a Raspberry Pi 2.
 
     make
 
@@ -31,67 +31,13 @@ This takes 68 minutes on a Raspberry Pi 2.
 
     docker login
 
-    # This takes about 10 minutes:
+    # This takes about 2 minutes:
     docker push joakimk/rpi-erlang:version
     docker push joakimk/rpi-erlang:latest
 
-## Known missing features from build output
-
-Will fix these as I find the need for them, or someone else does.
-
-    *********************************************************************
-    **********************  APPLICATIONS DISABLED  **********************
-    *********************************************************************
-
-    jinterface     : No Java compiler found
-    odbc           : ODBC library - link check failed
-
-    *********************************************************************
-    *********************************************************************
-    **********************  APPLICATIONS INFORMATION  *******************
-    *********************************************************************
-
-    wx             : Can not link the wx driver, wx will NOT be useable
-    erts           :
-
-                     WARNING:
-                       Only gcc's __sync_* builtins available for
-                       atomic memory access. This will cause lots
-                       of expensive and unnecessary memory barrier
-                       instructions to be issued which will make
-                       the performance of the runtime system
-                       suffer. You are *strongly* advised to
-                       upgrade to a gcc version that supports the
-                       __atomic_* builtins (at least gcc version
-                       4.7) or build with libatomic_ops. See the
-                       "Atomic Memory Operations and the VM"
-                       chapter of $ERL_TOP/HOWTO/INSTALL.md for
-                       more information.
-
-
-    *********************************************************************
-    *********************************************************************
-    **********************  DOCUMENTATION INFORMATION  ******************
-    *********************************************************************
-
-    documentation  :
-                     xsltproc is missing.
-                     fop is missing.
-                     xmllint is missing.
-                     The documentation can not be built.
-
-    *********************************************************************
-
-## TODO
-
-Possible image size optimizations:
-
-- [ ] Review what packages are really needed
-- [ ] Configure erlang to exclude unused parts (exwidgets, etc.)
-
 ## License
 
-Copyright (c) 2015 [Joakim Kolsjö](https://twitter.com/joakimk)
+Copyright (c) 2015-2018 [Joakim Kolsjö](https://twitter.com/joakimk)
 
 MIT License
 
