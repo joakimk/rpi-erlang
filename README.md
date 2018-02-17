@@ -1,6 +1,6 @@
 [Docker Hub](https://hub.docker.com/r/joakimk/rpi-erlang/)
 
-Erlang docker image for Raspberry Pi (compiled for it's ARM cpu). 100% based on <https://github.com/bitwalker/alpine-erlang> except it's based on arm32v6/alpine.
+Erlang docker image for Raspberry Pi (compiled for it's ARM cpu). 100% based on <https://github.com/bitwalker/alpine-erlang> except it's built on arm32v6/alpine.
 
 * Optimized for size: the image is about 50MB.
 * It's built using a Raspberry Pi 2. Please open an issue if it does not work on your Raspberry Pi version.
